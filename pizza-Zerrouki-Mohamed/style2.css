@@ -1,0 +1,473 @@
+@font-face {
+    font-family: "rubik";
+    src: url(RubikMonoOne-Regular.woff);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "quicksands";
+    src: url(Quicksand-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "quicksands_bold";
+    src: url(Quicksand-Bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "quicksands_semibold";
+    src: url(Quicksand-SemiBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+        font-family: "quicksands_light";
+        src: url(Quicksand-Light.ttf);
+        font-style: normal;
+        font-weight: normal;
+}
+
+/* enlever les bande blanche sur le coté */
+
+body{
+    padding: 0px;
+   margin: 0px;
+}
+
+
+/* Contient barre de nav, image , h1 et bouton */
+
+header{
+    padding: 0;
+    margin: 0;
+}
+
+/* place les éléments de la barre de navigation */
+
+header h2{
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+/* Place la barre de navigation */
+
+#barrenavhaut{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+
+/* style des éléments <a> de la barre de navigations */
+
+.lienbarrenavhaut{
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 0;
+    color: white;
+}
+
+/* style des éléments <li> de la barre de navigations */
+
+.libarrenavhaut{
+    font-family: quicksands_light;
+    padding-top: 0;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* style des éléments <ul> de la barre de navigations */
+
+.ulbarrenavhaut{
+    background-color: #EEB41F;
+    float: right;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* style de l'image tout en haut de la page  */
+
+#imgaccueil{
+    z-index: 0;
+    height: 800px;
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    object-fit: cover;
+   
+}
+/* Section jaune sur image */
+#accueil{
+
+    color: white;
+    background-color: #EEB41F;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Titre principale */
+h1{
+    margin-top: 20px;
+    display: inline-block;
+    padding-left: 200px;
+    font-family: rubik;
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 10px;
+    
+}
+
+/* Permet de changer la police d'une partie du h1 */
+
+#quicksand{
+    font-family: quicksands_light;
+    padding-top: 0px;
+    margin-top: 0px;
+    letter-spacing: 20px;
+}
+
+/* Bouton en savoir plus */
+
+#accueilbutton{
+    position: relative;
+    font-weight: bold;
+    font-family: quicksands_light;
+    bottom: 130px;
+    padding: 15px 20px 15px 20px;
+    background-color: #EEB41F;
+    font-size: 30px;
+    margin-left: 200px;
+    color: white;
+    text-align: center;
+    border-width: 1px;
+    border: solid rgba(255,255,255,0.5);
+    border-radius: 5px;
+    
+
+    
+}
+
+/* permet de rajouter du padding au éléments de la barre de navigation */
+
+.padding{
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+/* Permet de décaler le h1 ainsi que le bouton */
+#decale{
+    position: absolute;
+    top: 350px;
+    z-index: 3;
+}
+
+
+
+
+
+/* Contient 2bloc avec titre et texte d'un coté image de l'autre */
+
+
+/* gère la div grise présente sous l'image */
+
+#sousimage{
+    margin-top: 0;
+    display: flex;
+    height: 600px;
+    background-color: #1E1E1E;
+}
+
+/* permet de gérer la section ou il y a le texte sous l'image */
+
+#section1{
+    margin-top: 100px;
+    margin-left: 55px;
+    height: 200px;
+    width: 40%;
+    color: white;
+    padding-left: 250px;
+    padding-right: 100px;
+    font-family: quicksands;
+    font-size: 26px;
+    z-index: 1;
+}
+
+/* section avec fond jaune  */
+
+#jaune{
+    
+    position: absolute;
+    margin-top: 200px;
+    background-color: #EEB41F;
+    height: 175px;
+    width: 52%;
+    margin-left: 150px;
+}
+
+/* gère la div ou il y a l'image */
+
+#section2{
+    margin-top: 100px;
+    padding-left: 50px;
+    width: 60%;
+    height: 400px;
+}
+/* gère le h2 "des nouveautés" */
+
+#nouveaute{
+    padding-top: 10px;
+    font-family: quicksands_light;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* permet de rajouter | devant les li */
+
+#listnouveaute{
+    list-style-type: '|'
+}
+
+/* gère le texte sous le h2 "des nouveautés" */
+
+.listenouveauteli{
+    padding-left: 15px;
+}
+
+/* permet de gérer l'image a droite de la div grise */
+
+.rogner{
+    object-fit: cover;
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: 400px;
+
+}
+
+/*  Permet de gérer le texte tourner "nouveau format" */
+
+#rotation{
+    
+    transform: rotate(-90deg);
+    padding-left: 0px;
+    color: white;
+    font-size: 32px;
+    padding-top: 240px;
+    margin-top: 30px;
+    
+}
+#rotationdiv{
+    padding-top :45px;
+    font-family: quicksands;
+    left: -100px;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    z-index: 2;
+}
+
+/* Contient les 3 Titres + les 3 paragraphes */
+
+/* Gère la div des 3 paragraphes */
+
+#titre4{
+    font-family: quicksands;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    font-size: 18px;
+
+}
+
+/* Gère un des 3 paragraphes */
+
+#titre1{
+    padding-left: 250px;
+    
+}
+
+/* Gère un des 3 paragraphes */
+
+#titre2{
+    padding-left: 150px;
+    
+}
+
+/* Gère un des 3 paragraphes */
+
+#titre3{
+    padding-left: 150px;
+    
+    padding-right: 250px;
+}
+
+/* Gère les h2 de la div titre4 */
+
+.titre
+{   
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    font-size: 30px;
+    color: #EEB41F;
+    font-family: quicksands_semibold;
+}
+
+/* Gère les paragraphes sans les h2 */
+
+.paragraphetitre{
+    margin-top: 0;
+}
+/* l'id "nospizza" comprend le titre + les 3 immages */
+
+/* Gère la div avec les 3 images */
+
+#nospizza{
+    background-color: #1E1E1E;
+    
+}
+
+/* Gère le h2 "nos pizza" */
+
+#pizza{
+    padding-top: 50px;
+    color: white;
+    font-family: rubik;
+    font-size: 80px;
+    padding-left: 50px;
+    padding-bottom: 120px;
+    margin-bottom: 0px;
+    
+}
+
+/* Gère la div ou il y a les 3 images */
+
+#images3{
+    display: flex;
+}
+
+/* Gère une des 3 images */
+
+.image1{
+    object-fit: cover;
+    padding-left: 50px;
+    width: 500px;
+    height: 400px;
+    padding-bottom: 250px;
+}
+
+/* Gère une des 3 images */
+
+.image2{
+    object-fit: cover;
+    padding-left: 150px;
+    width: 500px;
+    height: 700px;
+    padding-bottom: 250px;
+}
+
+/* Gère une des 3 images */
+
+.image3{
+    margin-top: 485px;
+    object-fit: cover;
+    padding-left: 150px;
+    width: 500px;
+    height: 400px;   
+}
+
+/* Article comprend image, adresse, réseaux sociaux */
+
+article {
+    display: flex;
+}
+
+/* Gère l'image en bas de la page */
+
+#imgbaspage{
+    object-fit: cover;
+    padding-top: 120px;
+    padding-left: 120px;
+    height: 600px;
+    width: 700px;
+    margin-bottom: 100px;
+}
+
+/* Gère adresse et numéro de téléphone */
+
+article p{
+    font-family: quicksands;
+    padding-left: 100px;
+    padding-top: 250px;
+    font-size:28px;
+}
+
+/* Gère numéro de téléphone */
+
+#tel{
+    padding-top: 0px;
+    padding-left: 150px;
+}
+
+
+/* Div jaune pour réseau sociaux */
+
+#social{
+   background-color: #EEB41F;
+   width: 300px;
+   height: 70px;
+   position: absolute;
+   right: 0px;
+   margin-top: 500px;
+
+}
+
+/* Gère icone des réseau sociaux */
+
+.facebook{
+    padding-top: 10px;
+    font-size: 50px;
+    color: white;
+    padding-left: 30px;
+}
+
+/* Gère l'icone instagram */
+.fb{
+    padding-right: 20px;
+}
+
+/* Gère le footer */
+
+footer{
+    background-color: #3E3A35;
+    height: 30px;
+    
+}
+
+/* Gère les liens dans le footer */
+
+footer nav a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Gère la barre de navigation du footer */
+
+footer nav{
+    background-color: #3E3A35;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: quicksands_light;
+}
